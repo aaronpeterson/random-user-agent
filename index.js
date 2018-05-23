@@ -22,8 +22,6 @@ function get(type, predicate) {
     if (!blocks || blocks.length === 0)
         return Promise.resolve(null);
 
-    console.log('blocks.length', blocks.length);
-
     return Promise.resolve(_sample(blocks).ua);
 }
 
